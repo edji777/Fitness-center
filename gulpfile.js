@@ -8,6 +8,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var cssbeautify = require('gulp-cssbeautify');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -27,6 +28,18 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task('cssf', function() {
+    return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(cssbeautify())
+    .pipe(rename("style-formatted.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("server", function () {
@@ -97,5 +110,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "cssf", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

@@ -1,0 +1,369 @@
+.offers {
+  padding-top: 77px;
+  min-height: 774px;
+  background-color: #f8f9fc;
+}
+
+.offers::after {
+  position: absolute;
+  top: 1144px;
+  right: 0;
+  content: "";
+  width: 286px;
+  height: 420px;
+  background-image: url("../img/background-image-offers-desktop.png");
+}
+
+.offers__wrapper {
+  position: relative;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers__title {
+  margin-bottom: 38px;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #102654;
+}
+
+.offers__duration {
+  width: 387px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.offers__duration::after {
+  position: absolute;
+  left: 409px;
+  top: 166px;
+  content: "";
+  width: 341px;
+  height: 2px;
+  background-color: #787878;
+  opacity: 20%;
+}
+
+.offers__duration__item {
+  font-size: 20px;
+  color: #8490a8;
+}
+
+.offers__list {
+  width: 1160px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.offers__item {
+  border: 6px solid #ffffff;
+  width: 348px;
+  min-height: 436px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.offers__item:hover {
+  border-image: url("../img/backgorund-border.jpg");
+  border-image-slice: 3;
+}
+
+.offers__item-link:hover {
+  padding: 26px 46px 26px 45px;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+.offers__item:not(:nth-child(3n)) {
+  margin-right: auto;
+}
+
+.offers__item-title {
+  margin-top: 58px;
+  margin-bottom: 11px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110.2%;
+  color: #102654;
+}
+
+.offers__item-description {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #495a7d;
+}
+
+.offers__item-content {
+  position: relative;
+  width: 286px;
+  margin-top: 65px;
+  margin-left: 9px;
+  margin-bottom: 56px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #103aae;
+}
+
+.offers__item--instructor {
+  background-image: url("../img/background-5000.jpg");
+}
+
+.offers__item--day {
+  background-image: url("../img/background-1700.jpg");
+}
+
+.offers__item--full-day {
+  background-image: url("../img/background-2700.jpg");
+}
+
+.offers__item-price {
+  position: absolute;
+  top: 24px;
+  left: 218px;
+  content:"";
+  width: 30px;
+  height: 42px;
+  background-image: url("../img/icon-rubel.svg");
+}
+
+.offers__item-link {
+  padding: 24px 44px 24px 43px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #102654;
+  border: 2px solid #102654;
+}
+
+.offers__toggle {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.offers-hide {
+  display: none;
+}
+
+.offers-show {
+  display: flex;
+}
+
+.offers__toggle:hover {
+  color: #102654;
+}
+
+.offers__toggle--active {
+  color: #102654;
+}
+
+.offers__toggle--active:after {
+  display: block;
+  margin-top: 14px;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #d10a42;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .offers {
+    min-height: 1715px;
+    padding-top: 64px;
+  }
+
+  .offers::after {
+    width: 347px;
+    top: 2262px;
+    background-image: url("../img/background-image-offers-tablet.png");
+  }
+
+  .offers__wrapper {
+    width: 442px;
+  }
+
+  .offers__list {
+    width: 442px;
+    flex-direction: column;
+  }
+
+  .offers__item {
+    width: 430px;
+    min-height: 436px;
+    margin-bottom: 40px;
+  }
+
+  .offers__item:hover {
+    background-color: #f8f9fc;
+  }
+
+  .offers__title {
+    font-size: 42px;
+    margin-bottom: 28px;
+  }
+
+  .offers__duration {
+    margin-bottom: 43px;
+  }
+
+  .offers__duration::after {
+    left: 54px;
+    top: 145px;
+    width: 333px;
+  }
+
+  .offers__toggle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1px;
+  }
+
+  .offers__toggle--active:after {
+    margin-top: 10px;
+  }
+
+  .offers__item-content {
+    width: 367px;
+  }
+
+  .offers__item-price {
+    left: 259px;
+  }
+
+  .offers__item--instructor {
+    background-image: url("../img/background-5000-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center 169px;
+  }
+
+  .offers__item--day {
+    background-image: url("../img/background-1700-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center 169px;
+  }
+
+  .offers__item--full-day {
+    background-image: url("../img/background-2700-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center 169px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .offers {
+    min-height: 1445px;
+    padding-top: 42px;
+  }
+
+  .offers::after {
+    display: none;
+  }
+
+  .offers__wrapper {
+    width: 290px;
+  }
+
+  .offers__title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  .offers__toggle--active:after {
+    margin-top: 15px;
+  }
+
+  .offers__duration {
+    width: 290px;
+    margin-bottom: 34px;
+    justify-content: flex-start;
+  }
+
+  .offers__duration::after {
+    left: 0;
+    top: 117px;
+    width: 289px;
+  }
+
+  .offers__duration__item {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .offers__duration__item:not(:nth-child(3n)) {
+    margin-right: 45px;
+  }
+
+  .offers__list {
+    width: 290px;
+    flex-direction: column;
+  }
+
+  .offers__item {
+    width: 278px;
+    min-height: 372px;
+    margin-bottom: 35px;
+  }
+
+  .offers__item-title {
+    margin-top: 45px;
+    font-size: 22px;
+  }
+
+  .offers__item-content {
+    width: 229px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    font-size: 48px;
+  }
+
+  .offers__item-price {
+    width: 24px;
+    height: 33px;
+    top: 20px;
+    left: 174px;
+    background-size: cover;
+  }
+
+  .offers__item--instructor {
+    background-image: url("../img/background-5000-phone.jpg");
+  }
+
+  .offers__item--day {
+    background-image: url("../img/background-1700-phone.jpg");
+  }
+
+  .offers__item--full-day {
+    background-image: url("../img/background-2700-phone.jpg");
+  }
+}

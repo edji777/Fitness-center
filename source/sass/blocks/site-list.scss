@@ -1,0 +1,63 @@
+.site-list {
+  min-width: 430px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 22px;
+  margin-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.site-list__item a:hover {
+  color: #aa042e;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .site-list {
+    min-width: 390px;
+    padding-left: 20px;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .site-list {
+    position: relative;
+    min-width: auto;
+    padding-left: 0;
+    padding-right: 31px;
+    margin-bottom: 15px;
+  }
+
+  .site-list__item {
+    width: 100px;
+    margin-bottom: 21px;
+  }
+
+  .site-list__item a {
+    font-size: 16px;
+  }
+
+  .site-list__item--services {
+    order: -2;
+  }
+
+  .site-list__item--instructors {
+    order: -1;
+  }
+
+  .site-list__item--stock {
+    position: absolute;
+    top: -40px;
+    left: 161px;
+  }
+}

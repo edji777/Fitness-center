@@ -1,0 +1,193 @@
+.free-lesson {
+  position: relative;
+  width: 100%;
+  height: 336px;
+  background-color: #102654;
+  border-top: 1px solid #74819c;
+}
+
+.free-lesson__container {
+  position: relative;
+  width: 518px;
+  padding-top: 26px;
+  margin-right: 61px;
+  margin-left: auto;
+}
+
+.free-lesson__title {
+  margin-bottom: 45px;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.free-lesson__form {
+  width: 413px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.free-lesson__form::before,
+.free-lesson__form::after {
+  position: absolute;
+  top: 183px;
+  left: -1px;
+  content: "";
+  width: 190px;
+  height: 2px;
+  background-color: #74819c;
+}
+
+.free-lesson__form::after {
+  left: 219px;
+}
+
+.free-lesson__name,
+.free-lesson__tel {
+  width: 194px;
+  color: #ffffff;
+  background-color: #102654;
+  border: none;
+  outline:none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.free-lesson__name::placeholder,
+.free-lesson__tel::placeholder {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.free-lesson__button {
+  margin-top: 50px;
+}
+
+.free-lesson__button {
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  margin-top: 32px;
+  margin-left: -3px;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: 3px solid #fff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.free-lesson__button:hover {
+  color: #aa042e;
+  border-color: #aa042e;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .free-lesson {
+    width: 100%;
+    height: 323px;
+    padding: 0
+  }
+
+  .free-lesson__container {
+    position: relative;
+    width: 502px;
+    padding-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .free-lesson__title {
+    margin-bottom: 37px;
+    font-size: 42px;
+    letter-spacing: 1.27px;
+  }
+
+  .free-lesson__form {
+    width: 475px;
+  }
+
+  .free-lesson__form::before {
+    width: 206px;
+    top: 170px;
+    left: 0;
+  }
+
+  .free-lesson__form::after {
+    width: 206px;
+    top: 170px;
+    left: 266px;
+  }
+
+  .free-lesson__tel {
+    margin-right: 15px;
+  }
+
+  .free-lesson__button {
+    width: 100%;
+    margin-left: -2px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .free-lesson {
+    width: 100%;
+    height: 386px;
+    padding: 0
+  }
+
+  .free-lesson__container {
+    position: relative;
+    width: 290px;
+    padding-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .free-lesson__title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .free-lesson__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .free-lesson__form::before {
+    width: 290px;
+    top: 163px;
+    left: 0;
+  }
+
+  .free-lesson__form::after {
+    width: 290px;
+    top: 223px;
+    left: 0;
+  }
+
+  .free-lesson__name,
+  .free-lesson__tel {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .free-lesson__button {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+}

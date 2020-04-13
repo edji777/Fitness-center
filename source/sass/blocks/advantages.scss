@@ -1,0 +1,471 @@
+.advantages {
+  min-height: 550px;
+  background-color: #f8f9fc;
+}
+
+.advantages__wrapper {
+  position: relative;
+  width: 1041px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 78px;
+}
+
+.advantages__title {
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 41px;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #102654;
+}
+
+.advantages__list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__list::before,
+.advantages__list::after  {
+  position: absolute;
+  top: 182px;
+  left: 3px;
+  content: "";
+  width: 340px;
+  height: 2px;
+  background-color: #d10a42;
+  opacity: 20%
+}
+
+.advantages__list::after {
+  left: auto;
+  right: -3px;
+}
+
+.advantages__item {
+  width: 350px;
+  min-height: 236px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item--parking {
+  width: 366px;
+}
+
+
+.advantages__item-container {
+  width: 180px;
+}
+
+.advantages__item--parking .advantages__item-container {
+  width: 230px;
+}
+
+.advantages__item--comfort .advantages__item-container {
+  width: 190px;
+}
+
+.advantages__item--experience .advantages__item-container {
+  width: 230px;
+}
+
+.advantages__item-container-details {
+  position: relative;
+  width: 166px;
+  order: -1;
+}
+
+.advantages__item--parking .advantages__item-container-details {
+  width: 129px;
+}
+
+.advantages__item--comfort .advantages__item-container-details {
+  width: 159px;
+}
+
+.advantages__item--experience .advantages__item-container-details {
+  width: 113px;
+}
+
+.advantages__item-title {
+  margin-bottom: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #102654;
+}
+
+.advantages__item-description {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #102654;
+}
+
+.advantages__item-details-description {
+  position: absolute;
+  top: 85px;
+  left: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #2e35ac;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.advantages__item--comfort .advantages__item-details-description {
+  left: 21px;
+}
+
+.advantages__item--experience .advantages__item-details-description {
+  left: 11px;
+}
+
+.advantages__item-details-title {
+  position: absolute;
+  top: 0;
+  left: 28px;
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 150%;
+  background: linear-gradient(140.72deg,#ed0233 15.6%,#003eb7 70.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages__item--comfort .advantages__item-details-title {
+  left: 21px;
+}
+
+.advantages__item--experience .advantages__item-details-title {
+  left: 11px;
+}
+
+.advantages__item--center {
+  position: absolute;
+  top: 29px;
+  left: 402px;
+  width: 240px;
+  height: 307px;
+  background-color: #1c3374;
+}
+
+.advantages__item--center .advantages__item-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 135px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 82%;
+  color: #ffffff;
+}
+
+.advantages__item-number {
+  margin-left: 8px;
+}
+
+.advantages__item-text {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.advantages__item--center .advantages__item-description {
+  width: 172px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -27px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .advantages {
+    min-height: 650px;
+  }
+
+  .advantages__wrapper {
+    width: 667px;
+    padding-top: 64px;
+  }
+
+  .advantages__title {
+    width: 325px;
+    margin-bottom: 23px;
+    font-size: 42px;
+  }
+
+  .advantages__item {
+    width: 300px;
+    margin-bottom: 165px;
+  }
+
+  .advantages__list::before,
+  .advantages__list::after  {
+    display: none;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+
+  .advantages__item--comfort .advantages__item-container {
+    width: 183px;
+  }
+
+  .advantages__item-container-details {
+    width: 113px;
+  }
+
+  .advantages__item--parking .advantages__item-container-details {
+    width: 69px;
+  }
+
+.advantages__item--comfort .advantages__item-container-details {
+    width: 112px;
+  }
+
+  .advantages__item--experience .advantages__item-container-details {
+    width: 70px;
+  }
+
+  .advantages__item-details-title {
+    top: 6px;
+    left: -5px;
+    font-size: 58px;
+  }
+
+  .advantages__item--parking .advantages__item-details-title {
+    left: -18px;
+  }
+
+  .advantages__item--comfort .advantages__item-details-title {
+    left: -6px;
+  }
+
+  .advantages__item--experience .advantages__item-details-title {
+    left: -19px;
+  }
+
+  .advantages__item-details-description {
+    top: 75px;
+    left: -6px;
+  }
+
+  .advantages__item--parking .advantages__item-details-description {
+    left: -18px;
+  }
+
+  .advantages__item--comfort .advantages__item-details-description {
+    left: -6px;
+  }
+
+  .advantages__item--experience .advantages__item-details-description {
+    left: -19px;
+  }
+
+  .advantages__item--center {
+    position: absolute;
+    top: 140px;
+    left: 112px;
+    width: 442px;
+    height: 239px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .advantages__item--center .advantages__item-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 113px;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 82%;
+    color: #ffffff;
+  }
+
+  .advantages__item-number {
+    margin-top: -20px;
+    margin-left: -2px;
+  }
+
+  .advantages__item-text {
+    font-size: 22px;
+    margin-top: -7px;
+  }
+
+  .advantages__item--center .advantages__item-description {
+    margin-top: -9px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .advantages {
+    position: relative;
+    min-height: 1442px;
+    z-index: -2;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+    padding-top: 43px;
+  }
+
+  .advantages__wrapper::after {
+    position: absolute;
+    top: 537.95px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 241px;
+    background-color: #1c3374;
+    z-index: -1;
+  }
+
+  .advantages__title {
+    width: 254px;
+    margin-bottom: 35px;
+    font-size: 32px;
+  }
+
+  .advantages__list {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__item {
+    width: 300px;
+    margin-bottom: -33px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .advantages__item-container {
+    margin-left: 35px;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+
+  .advantages__list::before,
+  .advantages__list::after  {
+    display: none;
+  }
+
+  .advantages__item--area .advantages__item-container {
+    margin-left: 60px;
+  }
+
+
+  .advantages__item--comfort .advantages__item-container {
+      margin-left: 55px;
+  }
+
+  .advantages__item--area {
+    order: -3;
+    margin-bottom: -44px;
+  }
+
+  .advantages__item--parking {
+    order: -2;
+    margin-bottom: -26px;
+  }
+
+  .advantages__item--comfort {
+    margin-bottom: -44px;
+  }
+
+  .advantages__item-details-title {
+    left: 106px;
+    top: -5px;
+    font-size: 58px;
+  }
+
+  .advantages__item--parking .advantages__item-details-title {
+    left: 121px;
+  }
+
+  .advantages__item--comfort .advantages__item-details-title {
+    left: 106px;
+  }
+
+  .advantages__item--experience .advantages__item-details-title {
+    left: 122px;
+  }
+
+  .advantages__item-details-description {
+    top: 63px;
+    left: 136px;
+  }
+
+  .advantages__item--parking .advantages__item-details-description {
+    left: 130px;
+  }
+
+  .advantages__item--comfort .advantages__item-details-description {
+    left: 136px;
+  }
+
+  .advantages__item--experience .advantages__item-details-description {
+    left: 140px;
+  }
+
+  .advantages__item--center {
+    position: static;
+    width: 100%;
+    height: 239px;
+    margin-bottom: 32px;
+    order: -1;
+  }
+
+  .advantages__item-number {
+    margin-top: -15px;
+    margin-left: -4px;
+  }
+
+  .advantages__item-text {
+    font-size: 22px;
+    margin-top: -12px;
+    margin-left: 9px;
+  }
+
+  .advantages__item--center .advantages__item-description {
+    width: 100%;
+    margin-top: -42px;
+  }
+
+  .advantages__item-ad {
+    display: block;
+  }
+}

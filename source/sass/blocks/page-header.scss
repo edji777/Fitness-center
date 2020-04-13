@@ -1,0 +1,231 @@
+.page-header {
+  background-color: #6b194e;
+  background-image: url("../img/background-page-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 658px;
+}
+
+
+.page-header__wrapper {
+  position: relative;
+  padding-top: 27px;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header__container {
+  padding-left: 99px;
+  padding-right: 99px;
+  margin-bottom: 108px;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__tel {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-header__tel:hover {
+  color: #003d85;
+}
+
+.page-header__offer {
+  position: relative;
+  padding-left: 198px;
+  width: 300px;
+  margin-bottom: 94px;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 56px;
+  font-size: 109px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 3.2px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: right;
+}
+
+.page-header__title--location {
+  font-weight: 400;
+  font-size: 49px;
+  letter-spacing: 1.3px;
+  margin-bottom: 14px;
+}
+
+.page-header__offer-list {
+  position: absolute;
+  left: 122px;
+  top: 190px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: right;
+}
+
+.page-header__scroll {
+  display: block;
+  width: 123px;
+  padding: 20px 46px 19px 56px;
+  margin-left: auto;
+  margin-right: -1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 4px solid #ffffff;
+}
+
+.page-header__scroll:hover {
+  color: #aa042e;
+  border-color: #aa042e;
+}
+
+.page-header__social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    min-height: 554px;
+    background-image: url("../img/background-page-header-tablet.jpg");
+    background-position: center center;
+  }
+
+  .page-header__wrapper {
+    padding-top: 36px;
+  }
+
+  .page-header__container {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 69px;
+  }
+
+  .page-header__logo-image {
+    width: 80px;
+    height: auto;
+  }
+
+  .page-header__tel {
+    letter-spacing: -0.2px;
+  }
+
+  .page-header__offer {
+    padding-left: 119px;
+    width: 250px;
+    margin-bottom: 105px;
+  }
+
+  .page-header__title {
+    font-size: 86px;
+    letter-spacing: 2.5px;
+    margin-bottom: 40px;
+  }
+
+  .page-header__title--location {
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .page-header__offer-list {
+    left: 45px;
+    top: 132px;
+  }
+
+  .page-header__scroll {
+    padding: 20px 24px 19px 32px;
+    margin-right: -2px;
+  }
+
+  .social-list {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-header {
+    min-height: 491px;
+    background-image: url("../img/background-page-header-phone.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .page-header__wrapper {
+    padding-top: 17px;
+  }
+
+  .page-header__container {
+    padding-left: 13px;
+    padding-right: 15px;
+    margin-bottom: 69px;
+  }
+
+  .page-header__logo-image {
+    width: 69.5px;
+    height: auto;
+  }
+
+  .page-header__tel {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+
+  .page-header__offer {
+    padding-left: 0;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 77px;
+  }
+
+  .page-header__title {
+    font-size: 78px;
+    letter-spacing: 2.4px;
+    margin-bottom: 42px;
+  }
+
+  .page-header__title--location {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+
+  .page-header__offer-list {
+    left: 0;
+    top: 123px;
+  }
+
+  .page-header__scroll {
+    padding: 20px 17px 21px 86px;
+    margin-right: -2px;
+    width: 183px;
+  }
+
+  .social-list {
+    display: none;
+  }
+}

@@ -1,0 +1,156 @@
+.feedback {
+  min-height: 512px;
+  background-color: #ffffff;
+}
+
+.feedback__wrapper {
+  max-width: 680px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback__title {
+  width: 143px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #102654;
+}
+
+.feedback__container {
+  position: relative;
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.feedback__item {
+  position: relative;
+  padding-top: 34px;
+  width: 563px;
+  margin-left: 55px;
+  min-height: 208px;
+  background-color: #1c3374;
+}
+
+.feedback__item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 563px;
+  height: 242px;
+  content: "";
+  box-shadow: 1px 1px 10px 1px #e6eaef;
+}
+
+.feedback__item-title {
+  width: 107px;
+  margin-left: 170px;
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.feedback__item-description {
+  width: 328px;
+  margin-left: 171px;
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.feedback__image {
+  position: absolute;
+  top: 62px;
+  left: 62px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .feedback {
+    min-height: 479px;
+  }
+
+  .feedback__wrapper {
+    padding-top: 19px;
+  }
+
+  .feedback__title {
+    width: 122px;
+    margin-bottom: -9px;
+    font-size: 42px;
+  }
+
+
+  .feedback__item-title,
+  .feedback__item-description {
+    margin-left: -3px;
+  }
+
+  .feedback__item {
+    width: 393px;
+    padding-left: 173px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .feedback {
+    min-height: 518px;
+  }
+
+  .feedback__wrapper {
+    width: 291px;
+    padding-top: 12px;
+  }
+
+  .feedback__item::after {
+    width: 226px;
+    height: 335px;
+  }
+
+  .feedback__title {
+    width: 93px;
+    margin-bottom: 43px;
+    font-size: 32px;
+  }
+
+  .feedback__item {
+    width: 226px;
+    min-height: 307px;
+    padding: 0;
+    padding-top: 28px;
+    background-image: url("../img/feedback-phone.jpg");
+  }
+
+  .feedback__item-title {
+    width: 62px;
+    margin-left: 123px;
+    margin-bottom: 23px;
+    line-height: 130%;
+  }
+
+  .feedback__item-description {
+    text-align: center;
+    width: 176px;
+    margin-left: 25px;
+  }
+
+  .feedback__image {
+    top: 40px;
+    left: 40px;
+    width: 68px;
+    height: 68px;
+  }
+}
