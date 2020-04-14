@@ -92,6 +92,10 @@
     font-size: 42px;
   }
 
+  .feedback__item::after {
+    width: 566px;
+  }
+
 
   .feedback__item-title,
   .feedback__item-description {
