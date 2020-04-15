@@ -59,14 +59,16 @@
 }
 
 .free-lesson__name::placeholder,
-.free-lesson__tel::placeholder,
-.free-lesson__name::-moz-placeholder,
-.free-lesson__tel::-moz-placeholder {
+.free-lesson__tel::placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  opacity:1;
+}
+
+.free-lesson__name::-moz-placeholder,
+.free-lesson__tel::-moz-placeholder {
+  opacity: 1;
 }
 
 .free-lesson__button {
