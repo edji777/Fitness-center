@@ -6,11 +6,16 @@
     <meta name="description" content="Омский фитнес центр Supergym: тренажерный зал, групповые занятия, кардио-зона">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liga A: Fitness Center</title>
+    <link href="fonts/robotocondensedlight.woff2" rel="preload" as="font">
+    <link href="fonts/robotocondensedregular.woff2" rel="preload" as="font">
+    <link href="fonts/robotocondensedbold.woff2" rel="preload" as="font">
+    <link href="fonts/bebasneueregular.woff2" rel="preload" as="font">
+    <link href="fonts/bebasneuebold.woff2" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display: none;">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="paint0_linear" x1="19.774" y1="0" x2="105.785" y2="10.644" gradientUnits="userSpaceOnUse"><stop stop-color="#ED0233"></stop><stop offset="1" stop-color="#003EB7"></stop></linearGradient><linearGradient id="paint1_linear" x1="14" y1="49.52" x2="54.186" y2="9.184" gradientUnits="userSpaceOnUse"><stop stop-color="#003D85"></stop><stop offset=".885" stop-color="#B80027"></stop></linearGradient></defs><symbol id="icon-fb"><path d="M11.548.005L8.67 0C5.436 0 3.347 2.318 3.347 5.906V8.63H.453c-.25 0-.453.219-.453.49v3.945c0 .27.203.49.453.49h2.894v9.956c0 .27.202.489.452.489h3.776c.25 0 .452-.22.452-.49v-9.956h3.384c.25 0 .453-.219.453-.489l.001-3.946a.51.51 0 00-.132-.346.436.436 0 00-.32-.143H8.026V6.32c0-1.11.245-1.673 1.582-1.673h1.939c.25 0 .452-.22.452-.49V.494c0-.27-.202-.489-.452-.489z"></path></symbol><symbol id="icon-ig"><path d="M17.503 0H6.497A6.504 6.504 0 000 6.497v11.007A6.504 6.504 0 006.497 24h11.007A6.504 6.504 0 0024 17.504V6.497A6.504 6.504 0 0017.503 0zM12 18.562A6.57 6.57 0 015.438 12 6.57 6.57 0 0112 5.438 6.57 6.57 0 0118.562 12 6.57 6.57 0 0112 18.562zm6.72-11.577c-1.07 0-1.94-.87-1.94-1.939 0-1.07.87-1.94 1.94-1.94 1.069 0 1.939.87 1.939 1.94 0 1.07-.87 1.94-1.94 1.94z"></path><path d="M12 6.844A5.161 5.161 0 006.845 12 5.161 5.161 0 0012 17.155 5.161 5.161 0 0017.155 12 5.161 5.161 0 0012 6.844zM18.719 4.514a.533.533 0 10.001 1.066.533.533 0 00-.001-1.066z"></path></symbol><symbol id="icon-play"><circle cx="50" cy="50" r="49" stroke="url(#paint0_linear)" stroke-opacity=".2" stroke-width="2"></circle><circle cx="50" cy="50" r="36" fill="url(#paint1_linear)"></circle><path d="M59 49.5l-12.75 7.361V42.14L59 49.5z" fill="#fff"></path></symbol><symbol id="icon-rubel"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 17h6v6H0v-6z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 100-11zM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4z" fill="#102654"></path></symbol><symbol id="icon-swipe-dark" viewBox="0 0 18 34">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="paint0_linear" x1="19.774" y1="0" x2="105.785" y2="10.644" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ED0233"></stop><stop offset="1" stop-color="#003EB7"></stop></linearGradient><linearGradient id="paint1_linear" x1="14" y1="49.52" x2="54.186" y2="9.184" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#003D85"></stop><stop offset=".885" stop-color="#B80027"></stop></linearGradient></defs><symbol id="icon-fb"><path d="M11.548.005L8.67 0C5.436 0 3.347 2.318 3.347 5.906V8.63H.453c-.25 0-.453.219-.453.49v3.945c0 .27.203.49.453.49h2.894v9.956c0 .27.202.489.452.489h3.776c.25 0 .452-.22.452-.49v-9.956h3.384c.25 0 .453-.219.453-.489l.001-3.946a.51.51 0 00-.132-.346.436.436 0 00-.32-.143H8.026V6.32c0-1.11.245-1.673 1.582-1.673h1.939c.25 0 .452-.22.452-.49V.494c0-.27-.202-.489-.452-.489z"></path></symbol><symbol id="icon-ig"><path d="M17.503 0H6.497A6.504 6.504 0 000 6.497v11.007A6.504 6.504 0 006.497 24h11.007A6.504 6.504 0 0024 17.504V6.497A6.504 6.504 0 0017.503 0zM12 18.562A6.57 6.57 0 015.438 12 6.57 6.57 0 0112 5.438 6.57 6.57 0 0118.562 12 6.57 6.57 0 0112 18.562zm6.72-11.577c-1.07 0-1.94-.87-1.94-1.939 0-1.07.87-1.94 1.94-1.94 1.069 0 1.939.87 1.939 1.94 0 1.07-.87 1.94-1.94 1.94z"></path><path d="M12 6.844A5.161 5.161 0 006.845 12 5.161 5.161 0 0012 17.155 5.161 5.161 0 0017.155 12 5.161 5.161 0 0012 6.844zM18.719 4.514a.533.533 0 10.001 1.066.533.533 0 00-.001-1.066z"></path></symbol><symbol id="icon-play"><circle cx="50" cy="50" r="49" stroke="url(#paint0_linear)" stroke-opacity=".2" stroke-width="2"></circle><circle cx="50" cy="50" r="36" fill="url(#paint1_linear)"></circle><path d="M59 49.5l-12.75 7.361V42.14L59 49.5z" fill="#fff"></path></symbol><symbol id="icon-rubel"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 17h6v6H0v-6z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 100-11zM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4z" fill="#102654"></path></symbol><symbol id="icon-swipe-dark" viewBox="0 0 18 34">
 <path d="M17 33L0.999999 17L17 0.999998" stroke="#000000"></path>
 </symbol><symbol id="icon-swipe" viewBox="0 0 18 34">
 <path d="M17 33L0.999999 17L17 0.999998" stroke="#AFAFAF"></path>
@@ -57,9 +62,6 @@
             <div class="about-us__video-photo">
               <img class="about-us__image" src="img/image-supergym-photo.png" width="660" height="401" alt="Тренажерный зал">
               <video class="about-us__video" width="364" height="228" poster="img/image-supergym-video.png" tabindex="0">
-                <source src="video/" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-                <source src="video/" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
-                <source src="video/" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
               </video>
             </div>
           </div>
@@ -168,7 +170,7 @@
               <h2 class="instructors__title">Тренеры</h2>
               <div class="instructors__container">
               <ul class="instructors__list">
-                <li class="instructors__item instructors__item--anna">
+                <li class="instructors__item">
                   <span class="instructors__name">Анна Павлова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -180,7 +182,7 @@
                   </div>
                   <img src="img/image-instructors-anna.png" width="260" height="294" alt="Инструктор Анна">
                 </li>
-                <li class="instructors__item instructors__item--aleksey">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -192,7 +194,7 @@
                   </div>
                   <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
                 </li>
-                <li class="instructors__item instructors__item--aleksandr">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -204,7 +206,7 @@
                   </div>
                   <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
                 </li>
-                <li class="instructors__item instructors__item--maria">
+                <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -216,7 +218,7 @@
                   </div>
                   <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
                 </li>
-                <li class="instructors__item instructors__item--aleksey">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -228,7 +230,7 @@
                   </div>
                   <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
                 </li>
-                <li class="instructors__item instructors__item--maria">
+                <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -240,7 +242,7 @@
                   </div>
                   <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
                 </li>
-                <li class="instructors__item instructors__item--aleksandr">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -252,7 +254,7 @@
                   </div>
                   <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
                 </li>
-                <li class="instructors__item instructors__item--anna">
+                <li class="instructors__item">
                   <span class="instructors__name">Анна Павлова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -346,14 +348,14 @@
               <div class="feedback__container">
               <ul class="feedback__list">
                 <li class="feedback__item">
-                  <p class="feedback__item-title">Анна Орлова</p>
-                  <p class="feedback__item-description">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  <img class="feedback__image" src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
                 </li>
                 <li class="feedback__item">
-                  <p class="feedback__item-title">Орлова Анна</p>
-                  <p class="feedback__item-description">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  <img class="feedback__image" src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                  <h3>Орлова Анна</h3>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
                 </li>
               </ul>
             </div>
@@ -364,9 +366,9 @@
               <div class="free-lesson__container">
               <h2 class="free-lesson__title">бесплатное занятие</h2>
               <form class="free-lesson__form">
-                <input class="free-lesson__name" type="text" placeholder="Имя" required="">
-                <input class="free-lesson__tel" type="tel" id="free-lesson-telephone" placeholder="Телефон" maxlength="11" pattern="[1-9]{11}" required="">
-                <button class="free-lesson__button" type="submit">отправить</button>
+                <input type="text" placeholder="Имя" required="">
+                <input type="tel" id="free-lesson-telephone" placeholder="Телефон" maxlength="11" pattern="[1-9]{11}" required="">
+                <button type="submit">отправить</button>
               </form>
             </div>
             </section>
@@ -437,9 +439,7 @@
       </div>
       </footer>
     </div>
-    <script src="js/mask.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -177,6 +177,10 @@
   display: flex;
 }
 
+.offers__toggle:focus {
+  color: #103aae;
+}
+
 .offers__toggle:hover {
   color: #102654;
 }

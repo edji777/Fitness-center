@@ -3,8 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .visually-hidden {
@@ -19,7 +17,7 @@ body {
 
 @font-face {
     font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  src: url("../fonts/robotocondensedlight.woff2") format("woff2"), url("../fonts/robotocondensedlight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -27,7 +25,7 @@ body {
 
 @font-face {
     font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: url("../fonts/robotocondensedregular.woff2") format("woff2"), url("../fonts/robotocondensedregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,7 +33,7 @@ body {
 
 @font-face {
     font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/robotocondensedbold.woff2") format("woff2"), url("../fonts/robotocondensedbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -43,7 +41,7 @@ body {
 
 @font-face {
     font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff");
+  src: url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -51,7 +49,7 @@ body {
 
 @font-face {
     font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
+  src: url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -76,6 +74,11 @@ body {
     outline: none;
 }
 
+.slick-arrow.slick-prev:focus,
+.slick-arrow.slick-next:focus {
+    background-image: url("../img/icon-swipe-dark.svg");
+}
+
 .slick-arrow.slick-prev {
     top: 181px;
     left: -1px;
@@ -83,11 +86,6 @@ body {
     width: 16px;
     height: 32px;
     cursor: pointer;
-}
-
-.feedback__list .slick-arrow.slick-prev {
-    top: 154px;
-    left: 3px;
 }
 
 .slick-arrow.slick-prev:hover,
@@ -105,11 +103,6 @@ body {
     cursor: pointer;
 }
 
-.feedback__list .slick-arrow.slick-next {
-    top: 156px;
-    right: 3px;
-}
-
 .slick-list {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -118,10 +111,6 @@ body {
     margin-right: 15px;
     overflow: hidden;
     background-color: #fff;
-}
-
-.feedback__list .slick-list {
-    margin-left: 20px;
 }
 
 .slick-track {
@@ -133,20 +122,10 @@ body {
     flex-wrap: wrap;
 }
 
-.feedback__list .slick-list {
-    padding-left: 40px;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
     .slick-list {
         margin-left: 35px;
         padding-left: 0;
-    }
-
-    .feedback__list .slick-list {
-        margin-left: 30px;
-        padding-left: 0;
-        padding-top: 0;
     }
 
     .slick-arrow.slick-prev,
@@ -155,21 +134,6 @@ body {
         height: 19px;
         top: 177px;
         background-size: cover;
-    }
-
-    .instructors__list .slick-arrow.slick-next {
-        right: -15px;
-    }
-
-    .feedback__list .slick-arrow.slick-prev {
-        top: 159px;
-        left: -1px;
-        z-index: 100;
-    }
-
-    .feedback__list .slick-arrow.slick-next {
-        top: 159px;
-        right: 1px;
     }
 }
 
@@ -901,6 +865,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+.offers__toggle:focus {
+    color: #103aae;
 }
 
 .offers__toggle:hover {
@@ -1680,6 +1648,10 @@ body {
 
     .instructors__name--aleksey {
         left: 55px;
+    }
+
+    .instructors__list .slick-arrow.slick-next {
+        right: -15px;
     }
 }
 
@@ -2590,7 +2562,7 @@ body {
     box-shadow: 1px 1px 10px 1px #e6eaef;
 }
 
-.feedback__item-title {
+.feedback h3 {
     width: 107px;
     margin-left: 170px;
     margin-bottom: 13px;
@@ -2599,7 +2571,7 @@ body {
     line-height: 150%;
 }
 
-.feedback__item-description {
+.feedback p {
     width: 328px;
     margin-left: 171px;
     margin-top: 13px;
@@ -2608,10 +2580,25 @@ body {
     line-height: 140%;
 }
 
-.feedback__image {
+.feedback img {
     position: absolute;
     top: 62px;
     left: 62px;
+}
+
+.feedback__list .slick-arrow.slick-prev {
+    top: 154px;
+    left: 3px;
+}
+
+.feedback__list .slick-arrow.slick-next {
+    top: 156px;
+    right: 3px;
+}
+
+.feedback__list .slick-list {
+    margin-left: 20px;
+    padding-left: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2633,8 +2620,8 @@ body {
         width: 566px;
     }
 
-    .feedback__item-title,
-  .feedback__item-description {
+    .feedback h3,
+  .feedback p {
         margin-left: -3px;
     }
 
@@ -2673,24 +2660,41 @@ body {
         background-image: url("../img/feedback-phone.jpg");
     }
 
-    .feedback__item-title {
+    .feedback h3 {
         width: 62px;
         margin-left: 123px;
         margin-bottom: 23px;
         line-height: 130%;
     }
 
-    .feedback__item-description {
+    .feedback p {
         text-align: center;
         width: 176px;
         margin-left: 25px;
     }
 
-    .feedback__image {
+    .feedback img {
         top: 40px;
         left: 40px;
         width: 68px;
         height: 68px;
+    }
+
+    .feedback__list .slick-list {
+        margin-left: 30px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .feedback__list .slick-arrow.slick-prev {
+        top: 159px;
+        left: -1px;
+        z-index: 100;
+    }
+
+    .feedback__list .slick-arrow.slick-next {
+        top: 159px;
+        right: 1px;
     }
 }
 
@@ -2747,75 +2751,66 @@ body {
     left: 219px;
 }
 
-.free-lesson__name,
-.free-lesson__tel {
+.free-lesson__form input:focus {
+    outline-color: #aa042e;
+}
+
+.free-lesson__form input {
     width: 194px;
     color: #ffffff;
     background-color: #102654;
     border: none;
-    outline: none;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name::-webkit-input-placeholder,
-.free-lesson__tel::-webkit-input-placeholder {
+.free-lesson__form input::-webkit-input-placeholder {
     color: #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name::-moz-placeholder,
-.free-lesson__tel::-moz-placeholder {
+.free-lesson__form input::-moz-placeholder {
     color: #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name:-ms-input-placeholder,
-.free-lesson__tel:-ms-input-placeholder {
+.free-lesson__form input:-ms-input-placeholder {
     color: #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name::-ms-input-placeholder,
-.free-lesson__tel::-ms-input-placeholder {
+.free-lesson__form input::-ms-input-placeholder {
     color: #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name::placeholder,
-.free-lesson__tel::placeholder {
+.free-lesson__form input::placeholder {
     color: #ffffff;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.free-lesson__name::-moz-placeholder,
-.free-lesson__tel::-moz-placeholder {
+.free-lesson__form input::-moz-placeholder {
     opacity: 1;
 }
 
-.free-lesson__button {
-    margin-top: 50px;
-}
-
-.free-lesson__button {
+.free-lesson__form button {
     width: 100%;
     height: 55px;
     padding: 0;
     margin-top: 32px;
     margin-left: -3px;
     font: inherit;
-    color: inherit;
     background-color: transparent;
     cursor: pointer;
     border: 3px solid #fff;
@@ -2825,9 +2820,13 @@ body {
     text-transform: uppercase;
 }
 
-.free-lesson__button:hover {
+.free-lesson__form button:hover {
     color: #aa042e;
     border-color: #aa042e;
+}
+
+.free-lesson__form button:focus {
+    outline-color: #aa042e;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2867,11 +2866,11 @@ body {
         left: 266px;
     }
 
-    .free-lesson__tel {
+    .free-lesson__form input:last-child {
         margin-right: 15px;
     }
 
-    .free-lesson__button {
+    .free-lesson__form button {
         width: 100%;
         margin-left: -2px;
     }
@@ -2923,13 +2922,12 @@ body {
         left: 0;
     }
 
-    .free-lesson__name,
-  .free-lesson__tel {
+    .free-lesson__form input {
         width: 100%;
         margin-bottom: 40px;
     }
 
-    .free-lesson__button {
+    .free-lesson__form button {
         margin-top: 4px;
         margin-left: 0;
     }

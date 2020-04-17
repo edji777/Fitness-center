@@ -53,7 +53,7 @@
   box-shadow: 1px 1px 10px 1px #e6eaef;
 }
 
-.feedback__item-title {
+.feedback h3  {
   width: 107px;
   margin-left: 170px;
   margin-bottom: 13px;
@@ -62,7 +62,7 @@
   line-height: 150%;
 }
 
-.feedback__item-description {
+.feedback p {
   width: 328px;
   margin-left: 171px;
   margin-top: 13px;
@@ -71,10 +71,25 @@
   line-height: 140%;
 }
 
-.feedback__image {
+.feedback img {
   position: absolute;
   top: 62px;
   left: 62px;
+}
+
+.feedback__list .slick-arrow.slick-prev {
+  top: 154px;
+  left: 3px;
+}
+
+.feedback__list .slick-arrow.slick-next {
+  top: 156px;
+  right: 3px;
+}
+
+.feedback__list .slick-list {
+  margin-left: 20px;
+  padding-left: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -97,8 +112,8 @@
   }
 
 
-  .feedback__item-title,
-  .feedback__item-description {
+  .feedback h3,
+  .feedback p {
     margin-left: -3px;
   }
 
@@ -138,23 +153,40 @@
     background-image: url("../img/feedback-phone.jpg");
   }
 
-  .feedback__item-title {
+  .feedback h3 {
     width: 62px;
     margin-left: 123px;
     margin-bottom: 23px;
     line-height: 130%;
   }
 
-  .feedback__item-description {
+  .feedback p {
     text-align: center;
     width: 176px;
     margin-left: 25px;
   }
 
-  .feedback__image {
+  .feedback img {
     top: 40px;
     left: 40px;
     width: 68px;
     height: 68px;
+  }
+
+  .feedback__list .slick-list {
+    margin-left: 30px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .feedback__list .slick-arrow.slick-prev {
+    top: 159px;
+    left: -1px;
+    z-index: 100;
+  }
+
+  .feedback__list .slick-arrow.slick-next {
+    top: 159px;
+    right: 1px;
   }
 }
