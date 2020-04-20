@@ -6,6 +6,11 @@
     <meta name="description" content="Омский фитнес центр Supergym: тренажерный зал, групповые занятия, кардио-зона">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liga A: Fitness Center</title>
+    <link href="fonts/robotocondensedlight.woff2" rel="preload" as="font">
+    <link href="fonts/robotocondensedregular.woff2" rel="preload" as="font">
+    <link href="fonts/robotocondensedbold.woff2" rel="preload" as="font">
+    <link href="fonts/bebasneueregular.woff2" rel="preload" as="font">
+    <link href="fonts/bebasneuebold.woff2" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -54,10 +59,8 @@
             <div class="about-us__video-photo">
               <img class="about-us__image" src="img/image-supergym-photo.png" width="660" height="401" alt="Тренажерный зал">
               <video class="about-us__video" width="364" height="228" poster="img/image-supergym-video.png" tabindex="0">
-                <source src="video/" type='video/webm; codecs="vp8, vorbis"'>
-                <source src="video/" type='video/ogg; codecs="theora, vorbis"'>
-                <source src="video/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
               </video>
+              <div class="about-us__play"></div>
             </div>
           </div>
           </section>
@@ -165,7 +168,7 @@
               <h2 class="instructors__title">Тренеры</h2>
               <div class="instructors__container">
               <ul class="instructors__list">
-                <li class="instructors__item instructors__item--anna">
+                <li class="instructors__item">
                   <span class="instructors__name">Анна Павлова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -177,7 +180,7 @@
                   </div>
                   <img src="img/image-instructors-anna.png" width="260" height="294" alt="Инструктор Анна">
                 </li>
-                <li class="instructors__item instructors__item--aleksey">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -189,7 +192,7 @@
                   </div>
                   <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
                 </li>
-                <li class="instructors__item instructors__item--aleksandr">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -201,7 +204,7 @@
                   </div>
                   <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
                 </li>
-                <li class="instructors__item instructors__item--maria">
+                <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -213,7 +216,7 @@
                   </div>
                   <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
                 </li>
-                <li class="instructors__item instructors__item--aleksey">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -225,7 +228,7 @@
                   </div>
                   <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
                 </li>
-                <li class="instructors__item instructors__item--maria">
+                <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -237,7 +240,7 @@
                   </div>
                   <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
                 </li>
-                <li class="instructors__item instructors__item--aleksandr">
+                <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -249,7 +252,7 @@
                   </div>
                   <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
                 </li>
-                <li class="instructors__item instructors__item--anna">
+                <li class="instructors__item">
                   <span class="instructors__name">Анна Павлова</span>
                   <div class="instructors__item-wrapper">
                     <p class="instructors__item-title">CrossFit</p>
@@ -343,14 +346,22 @@
               <div class="feedback__container">
               <ul class="feedback__list">
                 <li class="feedback__item">
-                  <p class="feedback__item-title">Анна Орлова</p>
-                  <p class="feedback__item-description">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  <img class="feedback__image" src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                  <div class="feedback__item-container">
+                    <div class="feedback__item-wrapper">
+                      <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                      <h3>Анна Орлова</h3>
+                    </div>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
                 </li>
                 <li class="feedback__item">
-                  <p class="feedback__item-title">Орлова Анна</p>
-                  <p class="feedback__item-description">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  <img class="feedback__image" src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                  <div class="feedback__item-container">
+                    <div class="feedback__item-wrapper">
+                      <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                      <h3>Орлова Анна</h3>
+                    </div>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -361,9 +372,9 @@
               <div class="free-lesson__container">
               <h2 class="free-lesson__title">бесплатное занятие</h2>
               <form class="free-lesson__form">
-                <input class="free-lesson__name" type="text" placeholder="Имя" required>
-                <input class="free-lesson__tel" type="tel" id="free-lesson-telephone" placeholder="Телефон" maxlength="11" pattern="[1-9]{11}" required>
-                <button class="free-lesson__button" type="submit">отправить</button>
+                <input type="text" placeholder="Имя" aria-label="Поле ввода имени" required>
+                <input type="tel" id="free-lesson-telephone" placeholder="Телефон" maxlength="11" pattern="[1-9]{11}" aria-label="Поле ввода телефона" required>
+                <button type="submit">отправить</button>
               </form>
             </div>
             </section>
@@ -434,9 +445,8 @@
       </div>
       </footer>
     </div>
-    <script src="js/mask.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

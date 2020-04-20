@@ -60,7 +60,7 @@
   bottom: -111px;
 }
 
-.about-us__video-photo::after {
+.about-us__play {
   position: absolute;
   left: 69px;
   bottom: -47px;
@@ -71,6 +71,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.about-us__play:hover {
+  background-image: url("../img/icon-play-dark.svg");
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -119,7 +123,7 @@
     bottom: -79px;
   }
 
-  .about-us__video-photo::after {
+  .about-us__play {
     left: 300px;
     bottom: -32px;
     width: 73px;
@@ -186,7 +190,7 @@
     object-fit: cover;
   }
 
-  .about-us__video-photo::after {
+  .about-us__play {
     display: none;
   }
 
@@ -202,5 +206,9 @@
     background-repeat: no-repeat;
     cursor: pointer;
     z-index: 10;
+  }
+
+  .about-us__description:hover::after {
+    background-image: url("../img/icon-play-dark.svg");
   }
 }

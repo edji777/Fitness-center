@@ -53,7 +53,7 @@
   box-shadow: 1px 1px 10px 1px #e6eaef;
 }
 
-.feedback__item-title {
+.feedback h3 {
   width: 107px;
   margin-left: 170px;
   margin-bottom: 13px;
@@ -62,7 +62,7 @@
   line-height: 150%;
 }
 
-.feedback__item-description {
+.feedback p {
   width: 328px;
   margin-left: 171px;
   margin-top: 13px;
@@ -71,10 +71,25 @@
   line-height: 140%;
 }
 
-.feedback__image {
+.feedback img {
   position: absolute;
   top: 62px;
   left: 62px;
+}
+
+.feedback__list .slick-arrow.slick-prev {
+  top: 154px;
+  left: 3px;
+}
+
+.feedback__list .slick-arrow.slick-next {
+  top: 156px;
+  right: 3px;
+}
+
+.feedback__list .slick-list {
+  margin-left: 20px;
+  padding-left: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -92,9 +107,13 @@
     font-size: 42px;
   }
 
+  .feedback__item::after {
+    width: 566px;
+  }
 
-  .feedback__item-title,
-  .feedback__item-description {
+
+  .feedback h3,
+  .feedback p {
     margin-left: -3px;
   }
 
@@ -111,13 +130,15 @@
   }
 
   .feedback__wrapper {
-    width: 291px;
+    min-width: 291px;
     padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .feedback__item::after {
-    width: 226px;
-    height: 335px;
+    width: 100%;
+    height: 100%;
   }
 
   .feedback__title {
@@ -127,30 +148,70 @@
   }
 
   .feedback__item {
-    width: 226px;
-    min-height: 307px;
+    max-width: 566px;
+    width: 73.5vw;
+    min-width: 226px;
     padding: 0;
     padding-top: 28px;
+    margin-left: 0;
+    margin-right: 500px;
     background-image: url("../img/feedback-phone.jpg");
   }
 
-  .feedback__item-title {
-    width: 62px;
-    margin-left: 123px;
-    margin-bottom: 23px;
+  .feedback__item-container {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback__item-wrapper {
+    display: flex;
+    max-width: 205px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback h3 {
+    width: auto;
+    margin-left: 14px;
+    margin-bottom: 11px;
     line-height: 130%;
   }
 
-  .feedback__item-description {
+  .feedback p {
     text-align: center;
-    width: 176px;
-    margin-left: 25px;
+    width: auto;
+    max-width: 328px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
   }
 
-  .feedback__image {
-    top: 40px;
-    left: 40px;
+  .feedback img {
+    position: static;
+    display: inline-block;
     width: 68px;
     height: 68px;
+    margin-left: 16px;
+    margin-top: 12px;
+    order: -1;
+  }
+
+  .feedback__list .slick-list {
+    margin-left: 10.05vw;
+    padding-left: 0;
+    padding-top: 0;
+    pointer-events: none;
+  }
+
+  .feedback__list .slick-arrow.slick-prev {
+    top: 159px;
+    left: 5px;
+    z-index: 100;
+  }
+
+  .feedback__list .slick-arrow.slick-next {
+    top: 159px;
+    right: 5px;
   }
 }
