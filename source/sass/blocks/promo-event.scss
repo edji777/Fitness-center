@@ -164,7 +164,8 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .promo-event {
     min-height: 930px;
-    margin-top: -211px;
+    // margin-top: -211px;
+    margin-top: 0;
   }
 
   .promo-event__wrapper {
@@ -216,7 +217,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .promo-event {
     min-height: 1050px;
-    margin-top: -211px;
+    // margin-top: -211px;
+    margin-top: 0;
   }
 
   .promo-event__wrapper {

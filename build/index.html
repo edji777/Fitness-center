@@ -66,7 +66,16 @@
             <p class="about-us__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. <span class="about-us__desktop-description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span></p>
           </div>
             <div class="about-us__video-photo">
-              <img class="about-us__image" src="img/image-supergym-photo.png" width="660" height="401" alt="Тренажерный зал">
+              <picture>
+                  <!-- 1х: 678px; 2x: 1356px -->
+                <source type="image/webp" media="(min-width: 320px) and (max-width: 1199px)" srcset="img/photo-supergym-tablet-mobile_1x.webp 1x, img/photo-supergym-tablet-mobile_2x.webp 2x">
+                  <!-- 1х: 660px; 2x: 1320px -->
+                <source type="image/webp" srcset="img/photo-supergym-desktop_1x.webp 1x, img/photo-supergym-desktop_2x.webp 2x">
+                  <!-- 1х: 678px; 2x: 1356px -->
+                <source media="(min-width: 320px) and (max-width: 1199px)" srcset="img/photo-supergym-tablet-mobile@1x.jpg 1x, img/photo-supergym-tablet-mobile@2x.jpg 2x">
+                  <!-- 1х: 660px; 2x: 1320px -->
+                <img class="about-us__image" src="img/photo-supergym-desktop@1x.jpg" srcset="img/photo-supergym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал">
+              </picture>
               <video class="about-us__video" width="364" height="228" poster="img/image-supergym-video.png" tabindex="0">
               </video>
               <div class="about-us__play"></div>
@@ -111,19 +120,19 @@
               <li class="offers__item offers__item--instructor">
                 <h3 class="offers__item-title">С тренером</h3>
                 <p class="offers__item-description">72 занятия</p>
-                <p class="offers__item-content">30000 <span class="offers__item-price"></span></p>
+                <p class="offers__item-content">5000 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
               <li class="offers__item offers__item--day">
                 <h3 class="offers__item-title">Дневной</h3>
-                <p class="offers__item-description">с 8:00 до 17:00</p>
-                <p class="offers__item-content">10200 <span class="offers__item-price"></span></p>
+                <p class="offers__item-description">с 8:00 до 18:00</p>
+                <p class="offers__item-content">1700 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
               <li class="offers__item offers__item--full-day">
                 <h3 class="offers__item-title">Полный день</h3>
-                <p class="offers__item-description">с 8:00 до 22:00</p>
-                <p class="offers__item-content">16200 <span class="offers__item-price"></span></p>
+                <p class="offers__item-description">с 8:00 до 23:00</p>
+                <p class="offers__item-content">2700 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
             </ul>
@@ -131,19 +140,19 @@
               <li class="offers__item offers__item--instructor">
                 <h3 class="offers__item-title">С тренером</h3>
                 <p class="offers__item-description">144 занятия</p>
-                <p class="offers__item-content">60000 <span class="offers__item-price"></span></p>
+                <p class="offers__item-content">5000 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
               <li class="offers__item offers__item--day">
                 <h3 class="offers__item-title">Дневной</h3>
-                <p class="offers__item-description">с 8:00 до 17:00</p>
-                <p class="offers__item-content">20400 <span class="offers__item-price"></span></p>
+                <p class="offers__item-description">с 8:00 до 19:00</p>
+                <p class="offers__item-content">1700 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
               <li class="offers__item offers__item--full-day">
                 <h3 class="offers__item-title">Полный день</h3>
-                <p class="offers__item-description">с 8:00 до 22:00</p>
-                <p class="offers__item-content">32400 <span class="offers__item-price"></span></p>
+                <p class="offers__item-description">с 8:00 до 24:00</p>
+                <p class="offers__item-content">2700 <span class="offers__item-price"></span></p>
                 <a class="offers__item-link" href="#">купить абонемент</a>
               </li>
             </ul>
@@ -187,7 +196,12 @@
                       <li>Опыт — 4 года</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-anna.png" width="260" height="294" alt="Инструктор Анна">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-anna@1x.webp 1x, img/photo-instructor-anna@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-anna@1x.jpg" srcset="img/photo-instructor-anna@2x.jpg 2x" width="260" height="294" alt="Инструктор Анна">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
@@ -199,7 +213,12 @@
                       <li>Опыт — 5 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-aleksey@1x.webp 1x, img/photo-instructor-aleksey@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-aleksey@1x.jpg" srcset="img/photo-instructor-aleksey@2x.jpg 2x" width="260" height="294" alt="Инструктор Алексей">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
@@ -211,7 +230,12 @@
                       <li>Опыт — 6 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-aleksandr@1x.webp 1x, img/photo-instructor-aleksandr@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-aleksandr@1x.jpg" srcset="img/photo-instructor-aleksandr@2x.jpg 2x" width="260" height="294" alt="Инструктор Александр">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
@@ -223,7 +247,12 @@
                       <li>Опыт — 7 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-maria@1x.webp 1x, img/photo-instructor-maria@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-maria@1x.jpg" srcset="img/photo-instructor-maria@2x.jpg 2x" width="260" height="294" alt="Инструктор Мария">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksey">Алексей Лавров</span>
@@ -235,7 +264,12 @@
                       <li>Опыт — 5 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-aleksey.png" width="260" height="294" alt="Инструктор Алексей">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-aleksey@1x.webp 1x, img/photo-instructor-aleksey@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-aleksey@1x.jpg" srcset="img/photo-instructor-aleksey@2x.jpg 2x" width="260" height="294" alt="Инструктор Алексей">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name">Мария Кетова</span>
@@ -247,7 +281,12 @@
                       <li>Опыт — 7 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-maria.png" width="260" height="294" alt="Инструктор Мария">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-maria@1x.webp 1x, img/photo-instructor-maria@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-maria@1x.jpg" srcset="img/photo-instructor-maria@2x.jpg 2x" width="260" height="294" alt="Инструктор Мария">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name instructors__name--aleksandr">Александр Пашков</span>
@@ -259,7 +298,12 @@
                       <li>Опыт — 6 лет</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-aleksandr.png" width="260" height="294" alt="Инструктор Александр">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-aleksandr@1x.webp 1x, img/photo-instructor-aleksandr@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-aleksandr@1x.jpg" srcset="img/photo-instructor-aleksandr@2x.jpg 2x" width="260" height="294" alt="Инструктор Александр">
+                  </picture>
                 </li>
                 <li class="instructors__item">
                   <span class="instructors__name">Анна Павлова</span>
@@ -271,7 +315,12 @@
                       <li>Опыт — 4 года</li>
                     </ul>
                   </div>
-                  <img src="img/image-instructors-anna.png" width="260" height="294" alt="Инструктор Анна">
+                  <picture>
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <source type="image/webp" srcset="img/photo-instructor-anna@1x.webp 1x, img/photo-instructor-anna@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                    <img src="img/photo-instructor-anna@1x.jpg" srcset="img/photo-instructor-anna@2x.jpg 2x" width="260" height="294" alt="Инструктор Анна">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -282,44 +331,44 @@
               <h2 class="advantages__title">Наши преимущества</h2>
               <ul class="advantages__list">
                 <li class="advantages__item advantages__item--area">
+                  <div class="advantages__item-container-details">
+                    <p class="advantages__item-details"><span class="advantages__item-details-title">900</span><span class="advantages__item-details-description">кв/м</span></p>
+                  </div>
                   <div class="advantages__item-container">
                     <h3 class="advantages__item-title">Площадь</h3>
                     <p class="advantages__item-description">Занимайтесь без очередей и толпучки</p>
                   </div>
-                  <div class="advantages__item-container-details">
-                    <p class="advantages__item-details"><span class="advantages__item-details-title">900</span><span class="advantages__item-details-description">кв/м</span></p>
-                  </div>
                 </li>
                 <li class="advantages__item advantages__item--parking">
+                  <div class="advantages__item-container-details">
+                    <p class="advantages__item-details"><span class="advantages__item-details-title">70</span><span class="advantages__item-details-description">машин</span></p>
+                  </div>
                   <div class="advantages__item-container">
                     <h3 class="advantages__item-title">Собственная парковка</h3>
                     <p class="advantages__item-description">Вы всегда найдете место для своей машины на нашей парковке</p>
                   </div>
-                  <div class="advantages__item-container-details">
-                    <p class="advantages__item-details"><span class="advantages__item-details-title">70</span><span class="advantages__item-details-description">машин</span></p>
-                  </div>
+                </li>
+                <li class="advantages__item advantages__item--center">
+                  <h3 class="advantages__item-title"><span class="advantages__item-number">100</span><span class="advantages__item-text">Тренажеров</span></h3>
+                  <p class="advantages__item-description">Современные тренажеры на все группы мышц</p>
                 </li>
                 <li class="advantages__item advantages__item--comfort">
+                  <div class="advantages__item-container-details">
+                    <p class="advantages__item-details"><span class="advantages__item-details-title">350</span><span class="advantages__item-details-description">мест</span></p>
+                  </div>
                   <div class="advantages__item-container">
                     <h3 class="advantages__item-title">Комфорт</h3>
                     <p class="advantages__item-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                   </div>
-                  <div class="advantages__item-container-details">
-                    <p class="advantages__item-details"><span class="advantages__item-details-title">350</span><span class="advantages__item-details-description">мест</span></p>
-                  </div>
                 </li>
                 <li class="advantages__item advantages__item--experience">
+                  <div class="advantages__item-container-details">
+                    <p class="advantages__item-details"><span class="advantages__item-details-title">5+</span><span class="advantages__item-details-description">лет</span></p>
+                  </div>
                   <div class="advantages__item-container">
                     <h3 class="advantages__item-title">Тренерский опыт</h3>
                     <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
                   </div>
-                  <div class="advantages__item-container-details">
-                    <p class="advantages__item-details"><span class="advantages__item-details-title">5+</span><span class="advantages__item-details-description">лет</span></p>
-                  </div>
-                </li>
-                <li class="advantages__item advantages__item--center">
-                  <h3 class="advantages__item-title"><span class="advantages__item-number">100</span><span class="advantages__item-text">Тренажеров</span></h3>
-                  <p class="advantages__item-description">Современные тренажеры <span class="advantages__item-ad">на все группы мышц</span></p>
                 </li>
               </ul>
             </div>
@@ -357,7 +406,12 @@
                 <li class="feedback__item">
                   <div class="feedback__item-container">
                     <div class="feedback__item-wrapper">
-                      <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                      <picture>
+                          <!-- 1х: 80px; 2x: 160px -->
+                        <source type="image/webp" srcset="img/photo-feedback-anna@1x.webp 1x, img/photo-feedback-anna@2x.webp 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
+                        <img src="img/photo-feedback-anna@1x.jpg" srcset="img/photo-feedback-anna@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+                      </picture>
                       <h3>Анна Орлова</h3>
                     </div>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -366,7 +420,12 @@
                 <li class="feedback__item">
                   <div class="feedback__item-container">
                     <div class="feedback__item-wrapper">
-                      <img src="img/image-feedback-anna.png" width="80" height="80" alt="Анна Орлова">
+                      <picture>
+                          <!-- 1х: 80px; 2x: 160px -->
+                        <source type="image/webp" srcset="img/photo-feedback-anna@1x.webp 1x, img/photo-feedback-anna@2x.webp 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
+                        <img src="img/photo-feedback-anna@1x.jpg" srcset="img/photo-feedback-anna@2x.jpg 2x" width="80" height="80" alt="Орлова Анна">
+                      </picture>
                       <h3>Орлова Анна</h3>
                     </div>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -382,7 +441,7 @@
               <h2 class="free-lesson__title">бесплатное занятие</h2>
               <form class="free-lesson__form">
                 <input type="text" placeholder="Имя" aria-label="Поле ввода имени" required="">
-                <input type="tel" id="free-lesson-telephone" placeholder="Телефон" maxlength="11" pattern="[1-9]{11}" aria-label="Поле ввода телефона" required="">
+                <input type="tel" id="free-lesson-telephone" placeholder="Телефон" aria-label="Поле ввода телефона" required="">
                 <button type="submit">отправить</button>
               </form>
             </div>
@@ -454,7 +513,6 @@
       </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
   </body>

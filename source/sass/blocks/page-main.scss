@@ -1,5 +1,6 @@
 .page-main__wrapper {
   position: relative;
+  padding-bottom: 108px;
 }
 
 .page-main__container {
@@ -10,12 +11,20 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .page-main__wrapper {
+    padding-bottom: 113px;
+  }
+
   .page-main__container {
     flex-direction: column;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .page-main__wrapper {
+    padding-bottom: 260px;
+  }
+
   .page-main__container {
     flex-direction: column;
   }
