@@ -51,12 +51,17 @@
 
 .page-header__offer::after {
   position: absolute;
-  top: -115px;
+  bottom: -43px;
   left: 563px;
-  width: 500px;
-  height: 556px;
+  width: 36.603vw;
+  height: 40.703vw;
+  min-width: 480px;
+  min-height: 533px;
+  max-width: 500px;
+  max-height: 556px;
   content: "";
   background-image: url("../img/background-page-header-man.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -152,6 +157,8 @@
   .page-header__offer::after {
     top: -54px;
     left: 399px;
+    min-width: auto;
+    min-height: auto;
     width: 324px;
     height: 390px;
     background-position: -27px center;

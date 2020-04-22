@@ -124,18 +124,19 @@
   font-weight: 700;
   line-height: 150%;
   color: #103aae;
+  z-index: 10;
 }
 
-.offers__item--instructor {
-  background-image: url("../img/background-5000.jpg");
-}
-
-.offers__item--day {
-  background-image: url("../img/background-1700.jpg");
-}
-
-.offers__item--full-day {
-  background-image: url("../img/background-2700.jpg");
+.offers__item-shadow {
+  position: absolute;
+  top: -54px;
+  left: 64px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .offers__item-price {
@@ -230,6 +231,10 @@
     background-color: #f8f9fc;
   }
 
+  .offers__item-shadow {
+    left: 104px;
+  }
+
   .offers__title {
     font-size: 42px;
     margin-bottom: 28px;
@@ -262,24 +267,6 @@
 
   .offers__item-price {
     left: 259px;
-  }
-
-  .offers__item--instructor {
-    background-image: url("../img/background-5000-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center 169px;
-  }
-
-  .offers__item--day {
-    background-image: url("../img/background-1700-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center 169px;
-  }
-
-  .offers__item--full-day {
-    background-image: url("../img/background-2700-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center 169px;
   }
 }
 
@@ -344,6 +331,12 @@
     font-size: 22px;
   }
 
+  .offers__item-shadow {
+    top: -44px;
+    left: 50px;
+    font-size: 80px;
+  }
+
   .offers__item-content {
     width: 229px;
     margin-top: 52px;
@@ -357,17 +350,5 @@
     top: 20px;
     left: 174px;
     background-size: cover;
-  }
-
-  .offers__item--instructor {
-    background-image: url("../img/background-5000-phone.jpg");
-  }
-
-  .offers__item--day {
-    background-image: url("../img/background-1700-phone.jpg");
-  }
-
-  .offers__item--full-day {
-    background-image: url("../img/background-2700-phone.jpg");
   }
 }

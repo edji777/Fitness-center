@@ -223,12 +223,17 @@ body {
 
 .page-header__offer::after {
     position: absolute;
-    top: -115px;
+    bottom: -43px;
     left: 563px;
-    width: 500px;
-    height: 556px;
+    width: 36.603vw;
+    height: 40.703vw;
+    min-width: 480px;
+    min-height: 533px;
+    max-width: 500px;
+    max-height: 556px;
     content: "";
     background-image: url("../img/background-page-header-man.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -324,6 +329,8 @@ body {
     .page-header__offer::after {
         top: -54px;
         left: 399px;
+        min-width: auto;
+        min-height: auto;
         width: 324px;
         height: 390px;
         background-position: -27px center;
@@ -859,18 +866,19 @@ body {
     font-weight: 700;
     line-height: 150%;
     color: #103aae;
+    z-index: 10;
 }
 
-.offers__item--instructor {
-    background-image: url("../img/background-5000.jpg");
-}
-
-.offers__item--day {
-    background-image: url("../img/background-1700.jpg");
-}
-
-.offers__item--full-day {
-    background-image: url("../img/background-2700.jpg");
+.offers__item-shadow {
+    position: absolute;
+    top: -54px;
+    left: 64px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #e8e8e8;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .offers__item-price {
@@ -969,6 +977,10 @@ body {
         background-color: #f8f9fc;
     }
 
+    .offers__item-shadow {
+        left: 104px;
+    }
+
     .offers__title {
         font-size: 42px;
         margin-bottom: 28px;
@@ -1001,24 +1013,6 @@ body {
 
     .offers__item-price {
         left: 259px;
-    }
-
-    .offers__item--instructor {
-        background-image: url("../img/background-5000-tablet.jpg");
-        background-repeat: no-repeat;
-        background-position: center 169px;
-    }
-
-    .offers__item--day {
-        background-image: url("../img/background-1700-tablet.jpg");
-        background-repeat: no-repeat;
-        background-position: center 169px;
-    }
-
-    .offers__item--full-day {
-        background-image: url("../img/background-2700-tablet.jpg");
-        background-repeat: no-repeat;
-        background-position: center 169px;
     }
 }
 
@@ -1088,6 +1082,12 @@ body {
         font-size: 22px;
     }
 
+    .offers__item-shadow {
+        top: -44px;
+        left: 50px;
+        font-size: 80px;
+    }
+
     .offers__item-content {
         width: 229px;
         margin-top: 52px;
@@ -1101,18 +1101,6 @@ body {
         top: 20px;
         left: 174px;
         background-size: cover;
-    }
-
-    .offers__item--instructor {
-        background-image: url("../img/background-5000-phone.jpg");
-    }
-
-    .offers__item--day {
-        background-image: url("../img/background-1700-phone.jpg");
-    }
-
-    .offers__item--full-day {
-        background-image: url("../img/background-2700-phone.jpg");
     }
 }
 
